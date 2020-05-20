@@ -57,7 +57,7 @@ Citizen.CreateThread(function()
 			if sitting then
 				wakeup()
 			else
-				local object, distance = ESX.Game.GetClosestObject(Config.Interactables)
+				local object, distance = ESX.Game.GetClosestObject(nil, Config.Interactables)
 
 				if Config.Debug then
 					table.insert(debugProps, object)
